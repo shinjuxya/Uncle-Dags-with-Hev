@@ -1,12 +1,10 @@
 👾 Catching Dags with Hev
 
-✨ Every catch has a story. Every adventure has a surprise.
+A simple idea turned into a whole adventure!
 
-Think you know what this game is about? Think again. 👀
+Ever wondered what else a catching game could offer? Well, that’s what we wanted to explore with Catching Dags with Hev!
 
-Welcome to the world of Hev and Uncle Dags! What seems like a simple catching game might turn into something much bigger than you expect.
-
-Explore, play, and discover what’s waiting for you. There are surprises along the way, but we’re not telling you everything just yet. 🤫
+Get to know Hev and Uncle Dags through a game filled with fun moments, unexpected twists, and little surprises. We won’t reveal everything here because discovering them is part of the fun!
 
 💻 Game Details
 
@@ -15,10 +13,8 @@ Explore, play, and discover what’s waiting for you. There are surprises along 
 * Built With: HTML, CSS & JavaScript
 * Save System: Local Device Storage
 
-🇵🇭 About the Project
+🎨 Behind the Game
 
-Created by a team of students who wanted to turn their creativity and ideas into a fun gaming experience.
+This game was created by a team of students who worked together, shared ideas, and turned their creativity into something they could proudly call their own. 🇵🇭
 
-🔥 CATCH. EXPLORE. DISCOVER.
-
-The best part? You have to play to find out. 😉
+Enough reading. It’s time to play!
