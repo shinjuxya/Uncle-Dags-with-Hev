@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no">
+<title>Catching Dags with Hev</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&family=Nunito+Sans:wght@400;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="three.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bgc" aria-hidden="true"></canvas>
+<canvas id="gl" aria-label="Game view"></canvas>
+<div id="ui">
+  <section id="title" class="scr" hidden></section>
+  <section id="home" class="scr" hidden></section>
+
+  <section id="run" class="scr" hidden>
+    <div class="hud">
+      <div class="r-top">
+        <div class="row hud-actions">
+          <button class="ibtn" id="btnPause" aria-label="Pause"></button>
+          <div><div class="hearts" id="hearts"></div><div class="muted" id="roundTxt">Round 1</div></div>
+        </div>
+        <div class="r-score"><small>SCORE</small><span id="rScore">0</span></div>
+        <span class="chip"><span id="icoCoin2"></span><b id="rCoins">0</b></span>
+      </div>
+      <div class="combo" id="combo">COMBO x0</div>
+      <div class="efx" id="efx"></div>
+      <div class="boss" id="bossBar" hidden><b id="bossName">Uncle Dags</b><div class="bar v"><i id="bossFill"></i></div></div>
+      <div class="bubble" id="bubble" hidden></div>
+      <div class="banner" id="banner"></div>
+      <div class="coach" id="coach" hidden></div>
+      <div class="keys" id="keys">Arrows / WASD move, jump, slide &nbsp;|&nbsp; Q pet ability &nbsp;|&nbsp; E power-up &nbsp;|&nbsp; P pause</div>
+      <div class="r-bot" id="rBot">
+        <button class="abtn" id="btnPet" aria-label="Pet ability"><img id="petImg" alt=""><span class="cd" id="petCd"></span></button>
+        <button class="abtn pw" id="btnPow" aria-label="Power-up"><span id="powName">Power</span><span class="cd" id="powCd"></span><span class="ct" id="powCt">0</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cust" class="scr" hidden>
+    <div class="cu-prev"><div class="cu-title">Character Customization</div><div class="cu-ped"><i class="aura" id="cuAura"></i><img id="cuImg" alt="Your character"><i class="plate"></i></div><div class="cu-name" id="cuName"></div></div>
+    <div class="panel"><div class="opts" id="custOpts"></div><div class="fb" id="custFoot"></div></div>
+  </section>
+  <section id="cine" class="scr" hidden>
+    <div class="cine-title" id="cineTitle">THE GREAT RIVALRY</div>
+    <div class="cmts" id="cmts"></div>
+    <button class="btn ghost sm skip" id="btnSkip">Skip</button>
+    <div class="cine-txt" id="cineTxt"></div>
+  </section>
+
+  <div id="sheetRoot"></div>
+  <div id="toast" role="status"></div>
+  <div class="load" id="load"><div class="disp">Catching Dags with Hev</div><div class="spin"></div><div class="muted" id="loadTxt">Setting up Manila</div></div>
+</div>
+
+
+
+
+
+<audio id="bgMusic" preload="auto"></audio>
+<audio id="catchSound" preload="auto"><source src="assets/audio/catch.wav" type="audio/wav"></audio>
+<audio id="missSound" preload="auto"><source src="assets/audio/miss.wav" type="audio/wav"></audio>
+<script src="embedded-assets.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

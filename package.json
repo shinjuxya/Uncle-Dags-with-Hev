@@ -1,0 +1,65 @@
+{
+  "name": "catching-dags-with-hev",
+  "productName": "Catching Dags with Hev",
+  "version": "1.0.0",
+  "description": "Catching Dags with Hev - a Filipino catching arcade adventure",
+  "main": "main.js",
+  "author": "Catching Dags with Hev Team",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis",
+    "postinstall": "node ensure-electron.js"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.catchingdagswithhev.game",
+    "productName": "Catching Dags with Hev",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "assets/audio/catch.wav",
+      "assets/audio/miss.wav",
+      "three.min.js",
+      "embedded-assets.js",
+      "game.js",
+      "style.css",
+      "package.json",
+      "ensure-electron.js",
+      "app.ico",
+      "assets/secret-worlds/*.mp3"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "app.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Catching-Dags-with-Hev-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Catching Dags with Hev"
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "commonjs",
+  "allowScripts": {
+    "electron@31.7.7": true
+  }
+}
