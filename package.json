@@ -3,12 +3,12 @@
   "productName": "Catching Dags with Hev",
   "version": "1.0.0",
   "description": "Catching Dags with Hev - a Filipino catching arcade adventure",
-  "main": "main.js",
+  "main": "scripts/main.js",
   "author": "Catching Dags with Hev Team",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder --win nsis",
-    "postinstall": "node ensure-electron.js"
+    "postinstall": "node scripts/ensure-electron.js"
   },
   "devDependencies": {
     "electron": "^31.7.7",
@@ -18,17 +18,17 @@
     "appId": "com.catchingdagswithhev.game",
     "productName": "Catching Dags with Hev",
     "files": [
-      "main.js",
-      "preload.js",
+      "scripts/main.js",
+      "scripts/preload.js",
       "index.html",
       "assets/audio/catch.wav",
       "assets/audio/miss.wav",
       "three.min.js",
-      "embedded-assets.js",
-      "game.js",
-      "style.css",
+      "scripts/embedded-assets.js",
+      "scripts/game.js",
+      "styles/style.css",
       "package.json",
-      "ensure-electron.js",
+      "scripts/ensure-electron.js",
       "app.ico",
       "assets/secret-worlds/*.mp3"
     ],

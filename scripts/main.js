@@ -22,7 +22,7 @@ function createWindow() {
     backgroundColor: '#0d1630',
     title: 'Catching Dags with Hev',
     autoHideMenuBar: true,
-    icon: path.join(__dirname, 'app.ico'),
+    icon: path.join(__dirname, '..', 'app.ico'),
     webPreferences: {
       contextIsolation: true,
       nodeIntegration: false,
@@ -33,7 +33,7 @@ function createWindow() {
   });
 
   Menu.setApplicationMenu(null);          // no File/Edit/View menu bar
-  win.loadFile(path.join(__dirname, 'index.html'));
+  win.loadFile(path.join(__dirname, '..', 'index.html'));
   win.once('ready-to-show', () => { win.show(); win.focus(); });
   win.on('page-title-updated', (e) => e.preventDefault()); // keep our window title
 

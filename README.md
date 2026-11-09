@@ -1,24 +1,25 @@
-👾 Catching Dags with Hev
+CATCHING DAGS WITH HEV - WINDOWS APP (ELECTRON)
 
-✨ Every catch has a story. Every adventure has a surprise.
+Keep the project files together in one folder. The game uses:
+  index.html, styles\style.css, three.min.js
+  scripts\game.js, scripts\embedded-assets.js
+  scripts\main.js, scripts\preload.js, scripts\ensure-electron.js
+  package.json, package-lock.json
+  app.ico, assets\audio\catch.wav, assets\audio\miss.wav
+  assets\secret-worlds\ (five MP3 files)
 
-Think you know what this game is about? Think again. 👀
+The HTML contains the game structure. Gameplay logic is in scripts\game.js,
+shared embedded media is in scripts\embedded-assets.js, and presentation
+styles are in styles\style.css. Keep the listed files and assets together
+when running or packaging.
 
-Welcome to the world of Hev and Uncle Dags! What seems like a simple catching game might turn into something much bigger than you expect.
+Open the folder in VS Code, open Terminal (Ctrl+`) and run:
+  1) npm install
+  2) npm start
+  3) npm run dist
 
-Explore, play, and discover what’s waiting for you. There are surprises along the way, but we’re not telling you everything just yet. 🤫
+The game opens in its own Electron window. The Windows installer is created in:
+  dist\Catching-Dags-with-Hev-Setup-1.0.0.exe
 
-💻 Game Details
-
-* Platform: Windows Desktop
-* Runtime: Electron
-* Built With: HTML, CSS & JavaScript
-* Save System: Local Device Storage
-
-🇵🇭 About the Project
-
-Created by a team of students who wanted to turn their creativity and ideas into a fun gaming experience.
-
-🔥 CATCH. EXPLORE. DISCOVER.
-
-The best part? You have to play to find out. 😉
+The installer creates Desktop and Start Menu shortcuts.
+F11 toggles fullscreen.
