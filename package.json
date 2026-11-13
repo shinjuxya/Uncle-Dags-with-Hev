@@ -30,7 +30,8 @@
       "package.json",
       "scripts/ensure-electron.js",
       "app.ico",
-      "assets/secret-worlds/*.mp3"
+      "assets/secret-worlds/*.mp3",
+      "assets/secret-worlds/*.mp4"
     ],
     "directories": {
       "output": "dist"
